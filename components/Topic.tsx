@@ -1,18 +1,33 @@
 import ui from '../styles/ui.module.scss';
 
+import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
+
 import Row from 'react-bootstrap/Row';
 
-import dynamic from 'next/dynamic';
-
-import React from 'react';
-import Carousel, {
-  slidesToShowPlugin,
-  autoplayPlugin,
-  arrowsPlugin,
-} from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+// @ts-ignore
+import Carousel, { consts } from 'react-elastic-carousel';
 
 function Topic({ children, title, className }) {
+  const breakPoints = [
+    { width: 150, itemsToShow: 1 },
+    { width: 491, itemsToShow: 2 },
+    { width: 100, itemsToShow: 4 },
+  ];
+
+  const Arrow = ({ type, onClick, isEdge }) => {
+    const pointer =
+      type === consts.PREV ? <IoChevronBack /> : <IoChevronForward />;
+    return (
+      <button
+        onClick={onClick}
+        disabled={isEdge}
+        className={`carouselChevron ${type === consts.PREV ? 'prev' : 'next'}`}
+      >
+        {pointer}
+      </button>
+    );
+  };
+
   return (
     <>
       <div className={`${ui.topic} row mb-4`}>
@@ -20,33 +35,18 @@ function Topic({ children, title, className }) {
           <h2 className='mb-0'>{title ? title : '...'}</h2>
         </div>
       </div>
-      <Row>
-        <Carousel
-          plugins={[
-            'infinite',
-            'fastSwipe',
-            {
-              resolve: slidesToShowPlugin,
-              options: {
-                numberOfSlides: 4,
-              },
-            },
-            {
-              resolve: arrowsPlugin,
-              options: {
-                arrowLeft: <button>asd</button>,
-                arrowLeftDisabled: <button>g</button>,
-                arrowRight: <button>asd</button>,
-                arrowRightDisabled: <button>asd</button>,
-                addArrowClickHandler: true,
-              },
-            },
-          ]}
-          animationSpeed={1000}
-        >
-          {children}
-        </Carousel>
-      </Row>
+      <Carousel
+        isRTL={false}
+        itemsToShow={4}
+        itemPadding={[0, 10]}
+        breakPoints={breakPoints}
+        pagination={false}
+        renderArrow={Arrow}
+        enableAutoPlay={false}
+        autoPlaySpeed={7500}
+      >
+        {children}
+      </Carousel>
     </>
   );
 }

@@ -25,7 +25,7 @@ export default function Home() {
       <Layout>
         <Container className='mt-5 pt-5'>
           <Topic title='Recommended to you' className='row'>
-            <Col xs={4}>
+            <Col>
               <Card
                 icon=''
                 title='The Python Course: build web application'
@@ -38,7 +38,7 @@ export default function Home() {
                 }}
               />
             </Col>
-            <Col xs={4}>
+            <Col>
               <Card
                 icon=''
                 title='The Python Course: build web application'
@@ -51,7 +51,7 @@ export default function Home() {
                 }}
               />
             </Col>
-            <Col xs={4}>
+            <Col>
               <Card
                 icon=''
                 title='The Python Course: build web application'
@@ -64,7 +64,165 @@ export default function Home() {
                 }}
               />
             </Col>
-            <Col xs={4}>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+          </Topic>
+          <Topic title='Recommended to you' className='row'>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
+              <Card
+                icon=''
+                title='The Python Course: build web application'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </Col>
+            <Col>
               <Card
                 icon=''
                 title='The Python Course: build web application'

@@ -2,7 +2,7 @@
   background-color: #fff;
   border-radius: 0.5rem;
   border: 0;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
   color: inherit;
   display: inline-block;
@@ -30,7 +30,7 @@
     border-bottom: 1px solid #eae7f5;
 
     h4 {
-      color: #18113c;
+      color: var(--text-tertiary);
       overflow: hidden;
       max-height: 3rem;
       font-size: 1rem;
@@ -80,10 +80,72 @@
 
 .topic {
   h2 {
-    color: #18113c;
+    color: var(--text-tertiary);
     line-height: 1.4;
     letter-spacing: -0.022rem;
     font-weight: 500;
     font-size: 24px;
+  }
+}
+
+.navbarOuter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  background-color: var(--background-secondary);
+  padding: 0 60px;
+  box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+
+  .navbarInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    &.primaryNav .navItem {
+      margin-left: 20px;
+    }
+
+    &.secondaryNav .navItem {
+      margin-right: 20px;
+
+      .navLink {
+        font-size: 1.3em;
+      }
+    }
+
+    .navItem {
+      padding: 0;
+
+      .navLink {
+        color: var(--text-secondary);
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.avatarSelect {
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  align-self: center;
+  img {
+    overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    max-height: 28px;
+    max-width: 28px;
   }
 }

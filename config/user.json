@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "name": "m2v",
+      "avatar_url": "https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512"
+    }
+  ],
+  "else": {
+    "main": {
+      "name": "all",
+      "avatar_url": ""
+    },
+    "unkown": {
+      "name": "...",
+      "avatar_url": ""
+    }
+  }
+}
