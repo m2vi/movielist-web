@@ -1,6 +1,6 @@
 import ui from '../styles/ui.module.scss';
 
-import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
+import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
 
 import Row from 'react-bootstrap/Row';
 
@@ -11,12 +11,16 @@ function Topic({ children, title, className }) {
   const breakPoints = [
     { width: 150, itemsToShow: 1 },
     { width: 491, itemsToShow: 2 },
-    { width: 100, itemsToShow: 4 },
+    { width: 100, itemsToShow: 6 },
   ];
 
   const Arrow = ({ type, onClick, isEdge }) => {
     const pointer =
-      type === consts.PREV ? <IoChevronBack /> : <IoChevronForward />;
+      type === consts.PREV ? (
+        <IoChevronBackOutline />
+      ) : (
+        <IoChevronForwardOutline />
+      );
     return (
       <button
         onClick={onClick}

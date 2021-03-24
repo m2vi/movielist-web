@@ -1,23 +1,15 @@
 import Head from 'next/head';
-
-import Container from 'react-bootstrap/Container';
-
-import Col from 'react-bootstrap/Col';
-
 import Layout from '../components/Layout';
 
-import ui from '../styles/ui.module.scss';
-
-import { FaRegClock } from 'react-icons/fa';
-
-import { IoBookmarkOutline, IoAppsSharp } from 'react-icons/io5';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 import Topic from '../components/Topic';
 import Card from '../components/Card';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Movielist - Home</title>
         <link rel='icon' href='/favicon.ico' />
@@ -238,6 +230,6 @@ export default function Home() {
           </Topic>
         </Container>
       </Layout>
-    </div>
+    </>
   );
 }

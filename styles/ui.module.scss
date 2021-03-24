@@ -1,8 +1,7 @@
 .card {
-  background-color: #fff;
-  border-radius: 0.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
   border: 0;
-  border: 1px solid var(--border-color);
   box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
   color: inherit;
   display: inline-block;
@@ -27,16 +26,19 @@
 
   .cardBody {
     padding: 1.5rem;
-    border-bottom: 1px solid #eae7f5;
+    border-bottom: 1px solid var(--border-color);
 
     h4 {
-      color: var(--text-tertiary);
       overflow: hidden;
       max-height: 3rem;
       font-size: 1rem;
 
-      &:hover {
-        color: #3903fe;
+      a {
+        color: var(--text-tertiary);
+
+        &:hover {
+          color: var(--accent-color);
+        }
       }
     }
   }
@@ -69,8 +71,8 @@
     margin-right: 5px;
     background: linear-gradient(
       90deg,
-      #ffc107 var(--percent),
-      #ffe69b var(--percent)
+      #ff7c01 var(--percent),
+      #ff7c013a var(--percent)
     );
     -webkit-background-clip: text;
     background-clip: text;

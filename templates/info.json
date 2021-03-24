@@ -1,0 +1,37 @@
+{
+  "key": "",
+  "title": "",
+  "duration": "",
+  "fsk": "",
+  "image_url": "",
+  "keywords": [],
+  "rating": "",
+  "release_date": "",
+  "resolution": "1080p",
+  "type": "movie",
+  "topics": {
+    "action": false,
+    "adventure": false,
+    "anime": false,
+    "comedy": false,
+    "crime": false,
+    "documentation": false,
+    "drama": false,
+    "family": false,
+    "fantasy": false,
+    "hollywood": false,
+    "horror": false,
+    "musical": false,
+    "romantic": false
+  },
+  "languages": {
+    "de": [false, "de"],
+    "en": [false, "en"],
+    "jp": [false, "jp"]
+  },
+  "publisher": {
+    "avatar_url": "",
+    "date": "",
+    "name": ""
+  }
+}

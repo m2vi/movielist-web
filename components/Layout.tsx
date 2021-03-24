@@ -4,7 +4,7 @@ import Footer from './Footer';
 export default ({ children }) => {
   return (
     <>
-      {<Navbar />}
+      {/* {<Navbar />} */}
       <main className='pt-5'>{children}</main>
       {/* <Footer /> */}
     </>

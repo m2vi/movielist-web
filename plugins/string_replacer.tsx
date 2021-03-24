@@ -1,6 +1,6 @@
 import config from '../config/config';
 
-export default (str: string) => {
+export const replacer = (str: string) => {
   const vars = config.variables;
 
   var i: number;

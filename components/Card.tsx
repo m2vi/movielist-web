@@ -1,14 +1,13 @@
 import ui from '../styles/ui.module.scss';
 
 import { FaRegClock } from 'react-icons/fa';
-import { IoBookmarkOutline, IoAppsSharp } from 'react-icons/io5';
 
 function Card(props: any) {
   return (
     <div className={`card mb-4 card-hover ${ui.card}`}>
       <a href='pages/course-single.html' className='card-img-top'>
         <img
-          src='https://via.placeholder.com/825x490.png/1f1f1f/FFFFFF'
+          src='https://via.placeholder.com/190x290.png/1f1f1f/FFFFFF'
           alt=''
           className='card-img-top'
         />
