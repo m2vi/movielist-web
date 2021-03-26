@@ -1,17 +1,18 @@
 import ui from '../styles/ui.module.scss';
-
+import isMobile from '../plugins/isMobile';
 import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
-
-import Row from 'react-bootstrap/Row';
 
 // @ts-ignore
 import Carousel, { consts } from 'react-elastic-carousel';
 
+console.log(isMobile);
+
 function Topic({ children, title, className }) {
   const breakPoints = [
-    { width: 150, itemsToShow: 1 },
-    { width: 491, itemsToShow: 2 },
-    { width: 100, itemsToShow: 6 },
+    { width: 575.98, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 767.98, itemsToShow: 3, itemsToScroll: 3 },
+    { width: 991.98, itemsToShow: 4, itemsToScroll: 4 },
+    { width: 1199.98, itemsToShow: 5, itemsToScroll: 5 },
   ];
 
   const Arrow = ({ type, onClick, isEdge }) => {
@@ -33,25 +34,23 @@ function Topic({ children, title, className }) {
   };
 
   return (
-    <>
-      <div className={`${ui.topic} row mb-4`}>
-        <div className='col'>
-          <h2 className='mb-0'>{title ? title : '...'}</h2>
+    <div className={`${ui.topic}`}>
+      <div className={`row no-gutter`}>
+        <div className='col p-0'>
+          <h2>{title ? title : '...'}</h2>
         </div>
       </div>
       <Carousel
         isRTL={false}
-        itemsToShow={4}
-        itemPadding={[0, 10]}
-        breakPoints={breakPoints}
+        itemPadding={[0, 2]}
         pagination={false}
         renderArrow={Arrow}
-        enableAutoPlay={false}
-        autoPlaySpeed={7500}
+        enableMouseSwipe={false}
+        breakPoints={breakPoints}
       >
         {children}
       </Carousel>
-    </>
+    </div>
   );
 }
 

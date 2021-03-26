@@ -5,7 +5,7 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/Login.module.scss';
 
 import { BiKey } from 'react-icons/bi';
-import { BsLink } from 'react-icons/bs';
+import { IoAppsSharp } from 'react-icons/io5';
 
 export default function Index() {
   return (
@@ -80,7 +80,7 @@ export default function Index() {
                     </div>
                     <div className='col-3 pe-0'>
                       <button className='btn dark'>
-                        <BsLink />
+                        <IoAppsSharp />
                       </button>
                     </div>
                   </div>

@@ -1,14 +1,17 @@
 {
   "key": "",
   "title": "",
-  "duration": "",
-  "fsk": "",
+  "description": "",
+  "duration": 90,
+  "actors": "",
+  "fsk": 18,
   "image_url": "",
   "keywords": [],
-  "rating": "",
-  "release_date": "",
+  "rating": 5,
+  "release_time": 1631370480000,
   "resolution": "1080p",
   "type": "movie",
+  "nudity": false,
   "topics": {
     "action": false,
     "adventure": false,
@@ -31,7 +34,7 @@
   },
   "publisher": {
     "avatar_url": "",
-    "date": "",
+    "date": 1631370480000,
     "name": ""
   }
 }

@@ -4,8 +4,8 @@ import Footer from './Footer';
 export default ({ children }) => {
   return (
     <>
-      {/* {<Navbar />} */}
-      <main className='pt-5'>{children}</main>
+      {<Navbar />}
+      <main style={{ marginTop: '68px' }}>{children}</main>
       {/* <Footer /> */}
     </>
   );

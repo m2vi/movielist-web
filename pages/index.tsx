@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -15,12 +16,26 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <Container className='mt-5 pt-5'>
+        <Header />
+        <div style={{ padding: '0 60px', marginTop: '9em' }}>
           <Topic title='Recommended to you' className='row'>
+            <div className='col'>
+              <Card
+                icon=''
+                title='Attack on Titan'
+                duration='2h 45min'
+                rating='3'
+                contributor={{
+                  name: 'm2v',
+                  avatar:
+                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
+                }}
+              />
+            </div>
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -33,7 +48,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -46,7 +61,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -59,7 +74,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -72,7 +87,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -85,7 +100,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -98,20 +113,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
-                duration='2h 45min'
-                rating='3'
-                contributor={{
-                  name: 'm2v',
-                  avatar:
-                    'https://cdn.discordapp.com/avatars/701400631662870609/209310a4575835949e4b1d4d951e0aaf.png?size=512',
-                }}
-              />
-            </Col>
-            <Col>
-              <Card
-                icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -126,7 +128,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -139,7 +141,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -152,7 +154,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -165,7 +167,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -178,7 +180,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -191,7 +193,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -204,7 +206,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -217,7 +219,7 @@ export default function Home() {
             <Col>
               <Card
                 icon=''
-                title='The Python Course: build web application'
+                title='Attack on Titan'
                 duration='2h 45min'
                 rating='3'
                 contributor={{
@@ -228,7 +230,7 @@ export default function Home() {
               />
             </Col>
           </Topic>
-        </Container>
+        </div>
       </Layout>
     </>
   );
