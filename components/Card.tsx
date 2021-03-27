@@ -7,8 +7,8 @@ function Card(props: any) {
     <div className={`card ${ui.card}`} draggable='false'>
       <div className='card-img-top'>
         <img
-          src='https://occ-0-1489-1490.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW-ll2bCfjPkVfetBwGs3UQ8JbOOY0_gC7B94qJIiBU-vvKMqpKFqbBd3RgYm1dWKtYv2LgUheB6lfiuoQS0xaCms9U.webp?r=190'
-          alt=''
+          src={props.image}
+          alt={`${props.name} ${props.type}`}
           className='card-img-top'
         />
       </div>

@@ -13,16 +13,17 @@
   }
   h1 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--text-primary);
+    margin-bottom: 28px;
   }
 
   .cardBody {
-    padding: 70px 87px 0 87px;
+    padding: 60px 68px 0;
     border: 0;
   }
 
   .cardFooter {
-    padding: 50px 87px;
+    padding: 60px 68px;
   }
 }

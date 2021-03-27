@@ -5,14 +5,16 @@ import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
 // @ts-ignore
 import Carousel, { consts } from 'react-elastic-carousel';
 
-console.log(isMobile);
-
-function Topic({ children, title, className }) {
+function Topic({ children, title, isVertical, ...props }) {
   const breakPoints = [
     { width: 575.98, itemsToShow: 2, itemsToScroll: 2 },
     { width: 767.98, itemsToShow: 3, itemsToScroll: 3 },
     { width: 991.98, itemsToShow: 4, itemsToScroll: 4 },
-    { width: 1199.98, itemsToShow: 5, itemsToScroll: 5 },
+    {
+      width: 1199.98,
+      itemsToShow: isVertical ? 5 : 6,
+      itemsToScroll: isVertical ? 5 : 6,
+    },
   ];
 
   const Arrow = ({ type, onClick, isEdge }) => {
@@ -34,7 +36,7 @@ function Topic({ children, title, className }) {
   };
 
   return (
-    <div className={`${ui.topic}`}>
+    <div className={`${ui.topic}`} {...props}>
       <div className={`row no-gutter`}>
         <div className='col p-0'>
           <h2>{title ? title : '...'}</h2>
@@ -47,6 +49,7 @@ function Topic({ children, title, className }) {
         renderArrow={Arrow}
         enableMouseSwipe={false}
         breakPoints={breakPoints}
+        transitionMs={750}
       >
         {children}
       </Carousel>

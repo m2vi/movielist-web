@@ -127,6 +127,6 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 15px;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   color: #fff;
 }

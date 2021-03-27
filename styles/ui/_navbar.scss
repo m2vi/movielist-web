@@ -1,0 +1,116 @@
+.navbarOuter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  z-index: 1505;
+  background-color: var(--background-primary);
+  padding: 0 calc((60px - 24px));
+  box-shadow: 0 0px 2px rgb(3 0 71 / 9%);
+
+  &.navbarDown {
+    background-color: var(--background-secondary);
+    box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+  }
+
+  .navbarInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    &.primaryNav .navItem {
+      margin-left: 24px;
+    }
+
+    &.secondaryNav .navItem {
+      margin-right: 24px;
+
+      a {
+        font-size: 1.3em;
+      }
+    }
+
+    .navItem {
+      padding: 0;
+
+      a {
+        color: var(--text-secondary);
+        font-size: 14px;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--text-muted-2);
+        }
+      }
+    }
+  }
+}
+
+.searchIcon {
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: transparent;
+  width: 0;
+  opacity: 0;
+  transition: all 250ms ease;
+  animation: searchbar 250ms forwards;
+
+  span,
+  input {
+    height: 34px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background-color: var(--background-primary);
+    border: 1px solid var(--border-color);
+    border-right: 0;
+    border-radius: 0;
+    color: var(--text-primary);
+  }
+
+  input {
+    border-radius: 0;
+    border: 1px solid var(--border-color);
+    border-left: 0;
+    padding-left: 0;
+    padding-right: 5px;
+
+    &:focus {
+      border: 1px solid var(--border-color);
+      border-left: 0;
+    }
+  }
+}
+
+@keyframes searchbar {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}

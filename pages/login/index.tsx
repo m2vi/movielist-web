@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Container from 'react-bootstrap/Container';
 import ui from '../../styles/ui.module.scss';
-import Layout from '../../components/Layout';
+import Layout from '../../interface/components/Layout';
 import styles from '../../styles/Login.module.scss';
 
 import { BiKey } from 'react-icons/bi';
@@ -17,17 +17,15 @@ export default function Index() {
         <Container className='d-flex justify-content-center'>
           <div
             className='pt-5 mt-5'
-            style={{ maxWidth: '525px', width: '100%' }}
+            style={{ maxWidth: '450px', width: '100%' }}
           >
             <div
               className={`card mb-4 card-hover ${ui.card} w-100 ${styles.login}`}
             >
               <div className={`${ui.cardBody} + ${styles.cardBody}`}>
-                <h1 className='mb-2 text-truncate-line-2'>Login</h1>
-                <p className='text-muted'>Welcome, we didn't miss you!</p>
+                <h1 className='mb-2 text-truncate-line-2'>Sign In</h1>
                 <form className='pt-4'>
                   <div className='mb-3'>
-                    <label className='form-label mb-2'>Username</label>
                     <input
                       type='text'
                       className='form-control'
@@ -36,7 +34,6 @@ export default function Index() {
                     />
                   </div>
                   <div className='mb-4'>
-                    <label className='form-label mb-2'>Password</label>
                     <input
                       type='password'
                       className='form-control'
@@ -44,7 +41,10 @@ export default function Index() {
                       name='password'
                     />
                   </div>
-                  <div className='mb-3 form-check'>
+                  <button type='button' className='btn mt-5'>
+                    Sign In
+                  </button>
+                  <div className='mt-3 form-check'>
                     <input
                       type='checkbox'
                       className='form-check-input'
@@ -53,9 +53,6 @@ export default function Index() {
                     />
                     <label className='form-check-label'>Remember me</label>
                   </div>
-                  <button type='button' className='btn mt-5'>
-                    Sign In
-                  </button>
                 </form>
               </div>
               <div className={`${ui.cardFooter} ${styles.cardFooter} pt-4`}>

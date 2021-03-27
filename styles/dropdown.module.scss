@@ -1,0 +1,76 @@
+.dropdownMenuWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 68px;
+  right: calc((36px + 24px) - 7.5px);
+  background-color: var(--background-secondary);
+  z-index: 5000;
+  width: 298px;
+  border: 1px solid var(--border-color);
+  border-top: 0;
+  border-radius: var(--border-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  &.hide {
+    display: none;
+  }
+  RiUserShared2Fill &.show {
+    display: flex;
+  }
+}
+
+.dropdownMenu {
+  width: 100%;
+  color: var(--text-primary);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:first-of-type {
+    padding-top: 2px;
+  }
+
+  &:last-of-type {
+    border: 0;
+  }
+}
+
+.dropdownItem {
+  height: 40px;
+  display: block;
+  width: 100%;
+  padding: 0 16px 0 32px;
+  clear: both;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: left;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 21px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+
+  svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-muted);
+    margin-right: 10px;
+    font-size: 18px;
+    align-self: center;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}

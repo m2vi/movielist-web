@@ -1,11 +1,16 @@
 {
   "key": "",
   "title": "",
+  "actors": "",
   "description": "",
   "duration": 90,
-  "actors": "",
   "fsk": 18,
-  "image_url": "",
+  "highlight": false,
+  "images": {
+    "horizontal": "",
+    "landscape": "",
+    "vertical": ""
+  },
   "keywords": [],
   "rating": 5,
   "release_time": 1631370480000,
@@ -25,7 +30,8 @@
     "hollywood": false,
     "horror": false,
     "musical": false,
-    "romantic": false
+    "romantic": false,
+    "classic": false
   },
   "languages": {
     "de": [false, "de"],
