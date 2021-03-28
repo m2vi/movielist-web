@@ -4,6 +4,7 @@ import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
 
 // @ts-ignore
 import Carousel, { consts } from 'react-elastic-carousel';
+import { useEffect } from 'react';
 
 function Topic({ children, title, isVertical, ...props }) {
   const breakPoints = [
@@ -58,3 +59,8 @@ function Topic({ children, title, isVertical, ...props }) {
 }
 
 export default Topic;
+
+// TODO: HIDE PREV/NEXT IF HOVER ON CARD,
+// TODO: IF HOVER ON PREV/NEXT SHOW SLIDERS
+// onMouseOver={(e) => handleHover(e, index)}
+// onMouseOut={(e) => handleLeave(e, index)}

@@ -37,3 +37,5 @@ yarn-error.log*
 yarn.lock
 
 api/login/data.json
+
+next.config.js

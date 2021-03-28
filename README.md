@@ -1,5 +1,7 @@
 # MOVIELIST
 
+341x192 | 342x684
+
 # Inhaltsverzeichnis
 
 1. <a href="#setup" style="color: #4183c4;">Sachen die benötigt werden</a>
@@ -67,13 +69,24 @@ Diese Datei liegt in dem Ordner neben der z.b. mp4 Datei und heißt **info.json*
 
 ```json
 {
-  "title": "",
-  "duration": "",
-  "image_url": "",
-  "rating": "",
-  "type": "movie",
   "key": "",
-  "keywords": ["", ""],
+  "title": "",
+  "actors": "",
+  "description": "",
+  "duration": 90,
+  "fsk": 18,
+  "highlight": false,
+  "images": {
+    "horizontal": "",
+    "landscape": "",
+    "vertical": ""
+  },
+  "keywords": [],
+  "rating": 5,
+  "release_time": 1631370480000,
+  "resolution": "1080p",
+  "type": "movie",
+  "nudity": false,
   "topics": {
     "action": false,
     "adventure": false,
@@ -87,17 +100,18 @@ Diese Datei liegt in dem Ordner neben der z.b. mp4 Datei und heißt **info.json*
     "hollywood": false,
     "horror": false,
     "musical": false,
-    "romantic": false
+    "romantic": false,
+    "classic": false
   },
   "languages": {
-    "de": false,
-    "en": false,
-    "jp": false
+    "de": [false, "de"],
+    "en": [false, "en"],
+    "jp": [false, "jp"]
   },
-  "contributor": {
-    "name": "",
+  "publisher": {
     "avatar_url": "",
-    "date": ""
+    "date": 1631370480000,
+    "name": ""
   }
 }
 ```

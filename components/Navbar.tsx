@@ -68,7 +68,7 @@ export default () => {
       <nav className={ui.navbarOuter}>
         <ul className={ui.navbarInner + ' ' + ui.primaryNav}>
           <li className={ui.navItem}>
-            <Link href='/'>
+            <a href='/'>
               <img
                 src='/logo/colored/logo-colored-1024.png'
                 alt='Movielist Colored Logo'
@@ -77,7 +77,7 @@ export default () => {
                   alignSelf: 'center',
                 }}
               />
-            </Link>
+            </a>
           </li>
           <li className={ui.navItem}>
             <Link href='/'>Home</Link>
