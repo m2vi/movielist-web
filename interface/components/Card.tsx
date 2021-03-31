@@ -21,7 +21,7 @@ function Card(props: any) {
             className={`card-img-top ${ui.verticalImage}`}
           />
         </div>
-        <a href='/' className={`${ui.cardDetails}`}>
+        <div href='/' className={`${ui.cardDetails}`}>
           <div className={`${ui.cardActionsBottom}`}>
             <span>
               <button className='btn light rounded'>
@@ -55,7 +55,7 @@ function Card(props: any) {
               </a>
             </>
           )}
-        </a>
+        </div>
       </div>
     </Col>
   );

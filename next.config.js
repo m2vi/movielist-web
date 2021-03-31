@@ -18,5 +18,6 @@ module.exports = {
   env: {
     MONGO_URI:
       'mongodb+srv://dbServer:NuOkfXm6gRGhUBvU@cluster0.yqvos.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+    jwtSecret: 'tzGSRhFxpwsjnPuJfkKueNvtfeKGenMT',
   },
 };

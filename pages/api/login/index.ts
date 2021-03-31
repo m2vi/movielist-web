@@ -1,61 +1,38 @@
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-
+import tokenLayout from '../../../utils/token/layout';
+import { NextApiRequest, NextApiResponse } from 'next';
 import dbConnect from '../../../utils/dbConnect';
 import dbSchema from '../../../models/userSchema';
 
 dbConnect();
 
-export default async (req, res) => {
-  const { method } = req;
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  try {
+    let user: any = await dbSchema.findOne({
+      username: req.query.username.toString().toLowerCase(),
+    });
 
-  switch (method) {
-    case 'GET':
-      try {
-        const user = dbSchema.find({});
+    const output = tokenLayout(user);
 
-        res.status(200).json({ success: true, data: user });
-      } catch (err) {
-        res.status(400).json({ success: false, error: err });
-      }
-      break;
-    case 'POST':
-      try {
-        const note = await dbSchema.create(req.body);
+    if (bcrypt.compareSync(req.query.password.toString(), user.password)) {
+      const token = jwt.sign(
+        {
+          output,
+        },
+        process.env.jwtSecret,
+        {
+          expiresIn: '1d',
+        }
+      );
 
-        res.status(201).json({ success: true, data: note });
-      } catch (err) {
-        res.status(400).json({ success: false, message: 'Bad Request' });
-      }
-      break;
-    default:
-      res.status(400).json({
-        success: false,
-        message: 'Unsupported request type was used.',
-      });
-      break;
+      res.status(200).json({ success: true, data: token });
+    } else {
+      res.status(403).json({ success: false, message: 'Wrong password!' });
+    }
+  } catch (err) {
+    res.status(403).json({ success: false, message: 'Wrong House Fool' });
   }
 };
 
-// if (token.length === 0 && username.length + password.length >= 1) {
-//   res.json({
-//     token: jwt.sign(
-//       {
-//         username,
-//         password,
-//       },
-//       'JWT'
-//     ),
-//   });
-// } else {
-//   res.json({
-//     success: true,
-//     data: {
-//       token: jwt.sign(
-//         {
-//           token,
-//         },
-//         'JWT'
-//       ),
-//     },
-//   });
-// }
+//  TODO: CONFIRM THIS
