@@ -21,7 +21,7 @@ function Card(props: any) {
             className={`card-img-top ${ui.verticalImage}`}
           />
         </div>
-        <div href='/' className={`${ui.cardDetails}`}>
+        <div className={`${ui.cardDetails}`}>
           <div className={`${ui.cardActionsBottom}`}>
             <span>
               <button className='btn light rounded'>

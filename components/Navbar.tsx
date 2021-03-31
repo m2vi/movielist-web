@@ -18,6 +18,7 @@ import { RiUserShared2Line } from 'react-icons/ri';
 import { VscAccount } from 'react-icons/vsc';
 import { BiKey } from 'react-icons/bi';
 import { AiOutlineDatabase } from 'react-icons/ai';
+import ColoredLogo from '../utils/coloredLogo';
 
 function Searchbar() {
   const [doBlur, setDoBlur] = useState(false);
@@ -69,14 +70,7 @@ export default () => {
         <ul className={ui.navbarInner + ' ' + ui.primaryNav}>
           <li className={ui.navItem}>
             <a href='/'>
-              <img
-                src='/logo/colored/logo-colored-1024.png'
-                alt='Movielist Colored Logo'
-                style={{
-                  height: '28px',
-                  alignSelf: 'center',
-                }}
-              />
+              <ColoredLogo light='#E50914' dark='#E50914' />
             </a>
           </li>
           <li className={ui.navItem}>

@@ -15,9 +15,17 @@ module.exports = withReactSvg({
 });
 
 module.exports = {
-  env: {
-    MONGO_URI:
-      'mongodb+srv://dbServer:NuOkfXm6gRGhUBvU@cluster0.yqvos.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-    jwtSecret: 'tzGSRhFxpwsjnPuJfkKueNvtfeKGenMT',
-  },
+  env: {},
 };
+
+// const withTM = require('next-transpile-modules');
+// const withPlugins = require('next-compose-plugins');
+
+// module.exports = withPlugins([
+//   [
+//     withTM,
+//     {
+//       transpileModules: ['react-syntax-highlighter'],
+//     },
+//   ],
+// ]);

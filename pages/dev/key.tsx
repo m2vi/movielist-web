@@ -1,25 +1,27 @@
-import { Component, useState } from 'react';
+import { Component, useEffect, useState } from 'react';
 import Head from 'next/head';
 
 import keyGen from '../../components/key';
 
-import hljs from 'highlight.js/lib/core';
-import json from 'highlight.js/lib/languages/json';
-
 import styles from '../../styles/function.key.module.scss';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+// @ts-ignore
+import SyntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
 
 interface AbcState {
   inputValue: any;
 }
 
 function Key() {
-  const [input, setInput] = useState(' ');
   const [output, setOutput] = useState(' ');
 
   const handleInput = (e: any) => {
-    setInput(e.target.value);
-    setOutput(JSON.stringify(keyGen(input), null, 2));
+    setOutput(JSON.stringify(keyGen(e.target.value), null, 2));
   };
+
+  useEffect(() => {
+    setOutput(JSON.stringify(keyGen(''), null, 2));
+  }, []);
 
   return (
     <>
@@ -38,22 +40,26 @@ function Key() {
               <input
                 type='text'
                 className='form-control key-input'
-                placeholder='Input'
-                onChange={handleInput}
+                placeholder='input'
+                onKeyUp={handleInput}
               />
             </div>
             <div className='mb-3'>
               <label className='form-label'>Key and more</label>
-              <code className={`form-control language-json`}>{output}</code>
+              <SyntaxHighlighter language='json' style={SyntaxStyle}>
+                {output}
+              </SyntaxHighlighter>
             </div>
-            <div className='mb-3 form-check'>
+            {/* <div className='mb-3 form-check'>
               <input
                 type='checkbox'
                 className='form-check-input'
                 placeholder='Output'
               />
-              <label className='form-check-label'>Check me out</label>
-            </div>
+              <label className='form-check-label' onChange={handleInput}>
+                URL
+              </label>
+            </div> */}
           </form>
         </div>
       </div>

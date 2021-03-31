@@ -51,6 +51,11 @@
         &:hover {
           color: var(--text-muted-2);
         }
+
+        svg,
+        img {
+          height: 28px;
+        }
       }
     }
   }

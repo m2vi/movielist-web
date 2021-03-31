@@ -83,7 +83,7 @@ h2 {
   line-height: 28px;
 }
 
-::selection {
+*::selection {
   background-color: var(--accent-color);
   color: var(--text-tertiary);
 }
