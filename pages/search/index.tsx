@@ -14,7 +14,7 @@ export default function Home(props: any) {
       <Layout>
         <QueryConsumer>
           {({ query, saveQuery }) => (
-            <Container className='d-flex justify-content-center'>
+            <Container className='flex justify-center'>
               <div className='pt-10'>
                 <p> Your search for "{query}" did not have any matches. </p>
                 <p>Suggestions:</p>

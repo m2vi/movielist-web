@@ -40,7 +40,7 @@ function Topic({ children, title, isVertical, ...props }) {
     <div className={`${ui.topic}`} {...props}>
       <div className={`row no-gutter`}>
         <div className='col p-0'>
-          <h2>{title ? title : '...'}</h2>
+          <h3>{title ? title : '...'}</h3>
         </div>
       </div>
       <Carousel
