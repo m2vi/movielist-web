@@ -2,7 +2,7 @@ import ui from '../styles/ui.module.scss';
 import dropdownStyles from '../styles/dropdown.module.scss';
 
 import { IoSearch, IoNotifications } from 'react-icons/io5';
-import { Component, useState } from 'react';
+import { Component, useContext, useState } from 'react';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 
@@ -19,14 +19,16 @@ import { VscAccount } from 'react-icons/vsc';
 import { BiKey } from 'react-icons/bi';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import ColoredLogo from '../utils/coloredLogo';
+import { QueryConsumer, QueryProvider } from '../context/QueryContext';
 
 function Searchbar() {
   const [doBlur, setDoBlur] = useState(false);
 
   const [searchbar, setSearchbar] = useState(false);
 
-  const [isBlur, setBlur] = useState(true);
-  const onBlur = () => (doBlur ? setSearchbar(false) : setBlur(false));
+  const onBlur = () => doBlur && setSearchbar(false);
+
+  const inputField = useRef(null);
 
   return (
     <a
@@ -41,19 +43,30 @@ function Searchbar() {
       }}
     >
       {searchbar ? (
-        <div className={`input-group ${ui.searchbar} active`}>
-          <span className='input-group-text' id='basic-addon1'>
-            <IoSearch />
-          </span>
-          <input
-            type='text'
-            className='form-control'
-            placeholder='Titles, people, genres'
-            onBlur={onBlur}
-            onFocus={() => setDoBlur(true)}
-            autoFocus
-          />
-        </div>
+        <>
+          <div className={`input-group ${ui.searchbar} active`}>
+            <span className='input-group-text' id='basic-addon1'>
+              <IoSearch />
+            </span>
+            <QueryConsumer>
+              {({ query, saveQuery }) => (
+                <input
+                  type='text'
+                  className='form-control'
+                  placeholder='Titles, people, genres'
+                  alt={query}
+                  onBlur={onBlur}
+                  onFocus={() => setDoBlur(true)}
+                  autoFocus
+                  ref={inputField}
+                  onKeyUp={(e) => {
+                    saveQuery(inputField.current.value);
+                  }}
+                />
+              )}
+            </QueryConsumer>
+          </div>
+        </>
       ) : (
         <IoSearch />
       )}
@@ -61,7 +74,7 @@ function Searchbar() {
   );
 }
 
-export default () => {
+const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
@@ -162,3 +175,5 @@ export default () => {
     </>
   );
 };
+
+export default Navbar;

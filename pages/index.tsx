@@ -1,11 +1,8 @@
-import Head from 'next/head';
-import Layout from '../interface/components/Layout';
-import Header from '../components/Header';
-
-import Col from 'react-bootstrap/Col';
-
-import Topic from '../components/Topic';
 import Card from '../interface/components/Card';
+import Head from 'next/head';
+import Header from '../components/Header';
+import Layout from '../interface/components/Layout';
+import Topic from '../components/Topic';
 
 export default function Home() {
   return (

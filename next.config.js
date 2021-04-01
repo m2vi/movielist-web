@@ -13,3 +13,9 @@ module.exports = withReactSvg({
     return config;
   },
 });
+
+module.exports = {
+  images: {
+    domains: ['occ-0-1489-1490.1.nflxso.net'],
+  },
+};

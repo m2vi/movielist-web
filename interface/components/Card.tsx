@@ -1,14 +1,12 @@
-import ui from '../../styles/ui.module.scss';
-import { IoShareSocial, IoPlay } from 'react-icons/io5';
-import { AiOutlineMore } from 'react-icons/ai';
+import Col from 'react-bootstrap/Col';
+import Image from 'next/image';
+
 import { BsDot, BsThreeDotsVertical, BsPlayFill } from 'react-icons/bs';
 import { FaPlay } from 'react-icons/fa';
 
-import Highlight from '../../public/icons/highlight.svg';
-import { useEffect, useRef, useState } from 'react';
+import ui from '../../styles/ui.module.scss';
 
-import offset from '../../plugins/offset';
-import Col from 'react-bootstrap/Col';
+import Highlight from '../../public/icons/highlight.svg';
 
 function Card(props: any) {
   return (
@@ -19,6 +17,8 @@ function Card(props: any) {
             src={props.image}
             alt={`${props.name} ${props.type}`}
             className={`card-img-top ${ui.verticalImage}`}
+            width='100%'
+            height='100%'
           />
         </div>
         <div className={`${ui.cardDetails}`}>
@@ -47,7 +47,7 @@ function Card(props: any) {
                 </span>
                 <span className='d-flex mt-2'>
                   <span>Absurd</span>
-                  <BsDot className='dividerDot'>&#8226;</BsDot>
+                  <BsDot className='dividerDot' />
                   <span>Teen</span>
                   <BsDot className='dividerDot' />
                   <span>Horror</span>

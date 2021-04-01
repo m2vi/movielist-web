@@ -1,9 +1,9 @@
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import tokenLayout from '../../../utils/token/layout';
 import { NextApiRequest, NextApiResponse } from 'next';
+import bcrypt from 'bcryptjs';
 import dbConnect from '../../../utils/dbConnect';
 import dbSchema from '../../../models/userSchema';
+import jwt from 'jsonwebtoken';
+import tokenLayout from '../../../utils/token/layout';
 
 dbConnect();
 

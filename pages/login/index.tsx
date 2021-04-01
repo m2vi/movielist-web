@@ -1,7 +1,9 @@
 import Head from 'next/head';
+
 import Container from 'react-bootstrap/Container';
-import ui from '../../styles/ui.module.scss';
 import Layout from '../../interface/components/Layout';
+
+import ui from '../../styles/ui.module.scss';
 import styles from '../../styles/Login.module.scss';
 
 import { BiKey } from 'react-icons/bi';

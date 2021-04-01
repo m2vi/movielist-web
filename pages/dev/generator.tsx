@@ -3,10 +3,10 @@ import Head from 'next/head';
 
 import keyGen from '../../utils/key';
 
-import styles from '../../styles/function.key.module.scss';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-// @ts-ignore
 import SyntaxStyle from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
+
+import styles from '../../styles/function.key.module.scss';
 
 interface AbcState {
   inputValue: any;
