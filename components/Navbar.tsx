@@ -70,7 +70,7 @@ export default () => {
         <ul className={ui.navbarInner + ' ' + ui.primaryNav}>
           <li className={ui.navItem}>
             <a href='/'>
-              <ColoredLogo light='#E50914' dark='#E50914' />
+              <ColoredLogo light='#8743FF' dark='#4136F1' />
             </a>
           </li>
           <li className={ui.navItem}>

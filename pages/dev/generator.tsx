@@ -1,7 +1,7 @@
 import { Component, useEffect, useState } from 'react';
 import Head from 'next/head';
 
-import keyGen from '../../components/key';
+import keyGen from '../../utils/key';
 
 import styles from '../../styles/function.key.module.scss';
 import SyntaxHighlighter from 'react-syntax-highlighter';
@@ -26,7 +26,7 @@ function Key() {
   return (
     <>
       <Head>
-        <title>Key Generator</title>
+        <title>Generator</title>
       </Head>
       <div className={styles.wrapper}>
         <div
@@ -45,21 +45,30 @@ function Key() {
               />
             </div>
             <div className='mb-3'>
-              <label className='form-label'>Key and more</label>
-              <SyntaxHighlighter language='json' style={SyntaxStyle}>
-                {output}
-              </SyntaxHighlighter>
+              <label className='form-label'>Actors</label>
+              <input
+                type='text'
+                className='form-control key-input'
+                placeholder='"," between actor'
+                onKeyUp={handleInput}
+              />
             </div>
-            {/* <div className='mb-3 form-check'>
+            <div className='mb-3 form-check'>
               <input
                 type='checkbox'
                 className='form-check-input'
                 placeholder='Output'
               />
               <label className='form-check-label' onChange={handleInput}>
-                URL
+                Nudity
               </label>
-            </div> */}
+            </div>
+            <div className='mb-3'>
+              <label className='form-label'>Key and more</label>
+              <SyntaxHighlighter language='json' style={SyntaxStyle}>
+                {output}
+              </SyntaxHighlighter>
+            </div>
           </form>
         </div>
       </div>
