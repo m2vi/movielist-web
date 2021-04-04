@@ -1,4 +1,3 @@
-import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
 
 import { BsDot, BsThreeDotsVertical, BsPlayFill } from 'react-icons/bs';
@@ -10,7 +9,7 @@ import Highlight from '../../public/icons/highlight.svg';
 
 function Card(props: any) {
   return (
-    <Col>
+    <div className='col'>
       <div className={`card ${ui.card}`} draggable='false'>
         <div className='card-img-top'>
           <img
@@ -57,7 +56,7 @@ function Card(props: any) {
           )}
         </div>
       </div>
-    </Col>
+    </div>
   );
 
   // return (

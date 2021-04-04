@@ -26,7 +26,7 @@ function Searchbar() {
 
   const [searchbar, setSearchbar] = useState(false);
 
-  const onBlur = () => doBlur && setSearchbar(false);
+  const onBlur = () => doBlur && setSearchbar(true);
 
   const inputField = useRef(null);
 

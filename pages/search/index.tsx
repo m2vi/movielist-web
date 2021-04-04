@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Layout from '../../interface/components/Layout';
 
-import Container from 'react-bootstrap/Container';
 import SearchContext, { QueryConsumer } from '../../context/QueryContext';
 import { useContext } from 'react';
+import search from '../../utils/search/search';
 
 export default function Home(props: any) {
   return (
@@ -14,7 +14,7 @@ export default function Home(props: any) {
       <Layout>
         <QueryConsumer>
           {({ query, saveQuery }) => (
-            <Container className='flex justify-center'>
+            <div className='flex justify-center container'>
               <div className='pt-10'>
                 <p> Your search for "{query}" did not have any matches. </p>
                 <p>Suggestions:</p>
@@ -27,8 +27,14 @@ export default function Home(props: any) {
                   <li>Try a genre, like comedy, romance, sports, or drama</li>
                 </ul>
               </div>
-            </Container>
+            </div>
           )}
+        </QueryConsumer>
+        <QueryConsumer>
+          {({ query, saveQuery }) => {
+            search(query);
+            return 'Ha';
+          }}
         </QueryConsumer>
       </Layout>
     </>

@@ -1,46 +1,62 @@
 {
-  "key": "",
-  "title": "",
-  "actors": "",
-  "description": "",
-  "duration": 90,
-  "fsk": 18,
-  "highlight": false,
+  "key": "who-am-i",
+  "title": "Who Am I",
+  "actors": [
+    "Tom Schilling",
+    "Hannah Herzsprung",
+    "Elyas M'Barek",
+    "Trine Dyrholm",
+    "Antoine Monot, Jr.",
+    "Wotan Wilke Möhring",
+    "Stephan Kampwirth",
+    "Leonard Carow"
+  ],
+  "description": "Der Außenseiter Benjamin ist ein Computer-Hacker. Sein Leben findet in der virtuellen Welt des Netzes statt. Hier lernt er auch den charismatischen Max kennen, der ihn mit seinem Kumpel Stephan und dem paranoiden Paul bekannt macht. Die Freunde gründen gemeinsam das Hacker-Kollektiv `CLAY', Clowns Laughing At You, mit dem sie durch Spaß-Aktionen die Aufmerksamkeit der Netzgemeinde auf sich ziehen wollen.",
+  "duration": 105,
+  "fsk": 12,
+  "highlight": true,
   "images": {
     "horizontal": "",
     "landscape": "",
     "vertical": ""
   },
-  "keywords": [],
-  "rating": 5,
-  "release_time": 1631370480000,
+  "keywords": [
+    "hacker",
+    "hacking",
+    "matrix",
+    "benjamin",
+    "computer",
+    "who",
+    "am"
+  ],
+  "rating": 4,
+  "release_time": 1411682400000,
   "resolution": "1080p",
   "type": "movie",
   "nudity": false,
+  "director": ["Baran bo Odar"],
   "topics": {
-    "action": false,
-    "adventure": false,
+    "action": true,
+    "adventure": true,
     "anime": false,
     "comedy": false,
     "crime": false,
     "documentation": false,
-    "drama": false,
+    "drama": true,
     "family": false,
     "fantasy": false,
     "hollywood": false,
     "horror": false,
     "musical": false,
     "romantic": false,
-    "classic": false
+    "classic": true
   },
   "languages": {
-    "de": [false, "de"],
-    "en": [false, "en"],
-    "jp": [false, "jp"]
+    "de": [false, "de"]
   },
   "publisher": {
-    "avatar_url": "",
-    "date": 1631370480000,
-    "name": ""
+    "avatar_url": "%m2v_avatar%",
+    "date": 1617459291388,
+    "name": "m2v"
   }
 }

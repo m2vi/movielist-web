@@ -1,0 +1,46 @@
+{
+  "key": "who-am-i",
+  "title": "Who Am I",
+  "actors": [],
+  "description": "",
+  "duration": 90,
+  "fsk": 18,
+  "highlight": false,
+  "images": {
+    "horizontal": "https://cdn.discordapp.com/attachments/812781769945776140/828032157523247214/iu.png",
+    "landscape": "",
+    "vertical": ""
+  },
+  "keywords": [],
+  "rating": 5,
+  "release_time": 1631370480000,
+  "resolution": "1080p",
+  "type": "movie",
+  "nudity": false,
+  "topics": {
+    "action": false,
+    "adventure": false,
+    "anime": false,
+    "comedy": false,
+    "crime": false,
+    "documentation": false,
+    "drama": false,
+    "family": false,
+    "fantasy": false,
+    "hollywood": false,
+    "horror": false,
+    "musical": false,
+    "romantic": false,
+    "classic": false
+  },
+  "languages": {
+    "de": [false, "de"],
+    "en": [false, "en"],
+    "jp": [false, "jp"]
+  },
+  "publisher": {
+    "avatar_url": "",
+    "date": 1631370480000,
+    "name": ""
+  }
+}

@@ -1,6 +1,4 @@
 import Head from 'next/head';
-
-import Container from 'react-bootstrap/Container';
 import Layout from '../../interface/components/Layout';
 
 import ui from '../../styles/ui.module.scss';
@@ -16,7 +14,7 @@ export default function Index() {
         <title>Movielist - Login</title>
       </Head>
       <Layout>
-        <Container className='d-flex justify-content-center'>
+        <div className='container flex justify-center'>
           <div
             className='pt-5 mt-5'
             style={{ maxWidth: '450px', width: '100%' }}
@@ -87,7 +85,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </Layout>
     </>
   );

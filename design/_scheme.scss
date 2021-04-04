@@ -1,8 +1,14 @@
 :root {
-  --color-secondary-washed-out: #879eed;
-  --color-secondary: #5575e7;
-  --color-accent-glow: rgba(253, 77, 77, 0.3);
-  --color-accent: #fd4d4d;
-  --color-accent-hover: #fd6868;
-  --color-accent-disabled: #f5bfbf;
+  // --color-secondary-washed-out: #879eed;
+  // --color-secondary: #5575e7;
+  --color-accent-glow: rgba(238, 77, 253, 0.3);
+  --color-accent: #8743ff;
+  --color-accent-hover: #985dff;
+  --color-accent-disabled: #d7bfff;
+  --gradient-accent: linear-gradient(
+    90deg,
+    rgba(135, 67, 255, 1) 0%,
+    rgba(65, 54, 241, 1) 100%
+  );
+  --shadow-accent: 0px 5px 20px 0 rgba(20, 102, 204, 0.04);
 }

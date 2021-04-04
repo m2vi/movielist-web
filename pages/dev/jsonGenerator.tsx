@@ -28,35 +28,16 @@ function Key() {
         <div className={styles.inner + ' pt-10 w-50 flex justify-center'}>
           <form className='container'>
             <div className='mb-3'>
-              <label className='form-label'>Moviename</label>
+              <label className='form-label'>info.json</label>
               <input
                 type='text'
                 className='form-control key-input'
-                placeholder='input'
+                placeholder='Raw JSON'
                 onKeyUp={handleInput}
               />
             </div>
             <div className='mb-3'>
-              <label className='form-label'>Actors</label>
-              <input
-                type='text'
-                className='form-control key-input'
-                placeholder='"," between actor'
-                onKeyUp={handleInput}
-              />
-            </div>
-            <div className='mb-3 form-check'>
-              <input
-                type='checkbox'
-                className='form-check-input'
-                placeholder='Output'
-              />
-              <label className='form-check-label' onChange={handleInput}>
-                Nudity
-              </label>
-            </div>
-            <div className='mb-3'>
-              <label className='form-label'>Key and more</label>
+              <label className='form-label'>Item for all.json</label>
               <SyntaxHighlighter language='json' style={SyntaxStyle}>
                 {output}
               </SyntaxHighlighter>

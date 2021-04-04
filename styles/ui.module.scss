@@ -19,6 +19,10 @@
   width: 100%;
   cursor: pointer;
   position: relative;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
 
   .verticalImage {
     transition: filter 0.15s ease;

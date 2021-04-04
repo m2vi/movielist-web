@@ -1,0 +1,60 @@
+{
+  "server": "",
+  "port": "",
+  "children": [
+    {
+      "key": "who-am-i",
+      "title": "Who Am I",
+      "actors": [
+        "Tom Schilling",
+        "Hannah Herzsprung",
+        "Elyas M'Barek",
+        "Trine Dyrholm",
+        "Antoine Monot, Jr.",
+        "Wotan Wilke Möhring",
+        "Stephan Kampwirth",
+        "Leonard Carow"
+      ],
+      "description": "Der Außenseiter Benjamin ist ein Computer-Hacker. Sein Leben findet in der virtuellen Welt des Netzes statt. Hier lernt er auch den charismatischen Max kennen, der ihn mit seinem Kumpel Stephan und dem paranoiden Paul bekannt macht. Die Freunde gründen gemeinsam das Hacker-Kollektiv `CLAY', Clowns Laughing At You, mit dem sie durch Spaß-Aktionen die Aufmerksamkeit der Netzgemeinde auf sich ziehen wollen.",
+      "duration": 105,
+      "fsk": 12,
+      "highlight": true,
+      "images": {
+        "horizontal": "",
+        "landscape": "",
+        "vertical": ""
+      },
+      "keywords": "hacker hacking matrix benjamin computer who am",
+      "rating": 4,
+      "release_time": 1411682400000,
+      "resolution": "1080p",
+      "type": "movie",
+      "nudity": false,
+      "director": ["Baran bo Odar"],
+      "topics": {
+        "action": true,
+        "adventure": true,
+        "anime": false,
+        "comedy": false,
+        "crime": false,
+        "documentation": false,
+        "drama": true,
+        "family": false,
+        "fantasy": false,
+        "hollywood": false,
+        "horror": false,
+        "musical": false,
+        "romantic": false,
+        "classic": true
+      },
+      "languages": {
+        "de": [false, "de"]
+      },
+      "publisher": {
+        "avatar_url": "%m2v_avatar%",
+        "date": 1617459291388,
+        "name": "m2v"
+      }
+    }
+  ]
+}
